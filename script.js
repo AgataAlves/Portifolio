@@ -78,7 +78,7 @@ function renderProjects(filter = "todos") {
             ${project.tags.map((tag) => `<span>${tag}</span>`).join("")}
           </div>
           <div class="card-links">
-            <a href="${project.demoUrl}" class="primary-link" target="_blank" rel="noopener">Abrir site ↗</a>
+            <a href="${project.demoUrl}" class="primary-link" rel="noopener">Abrir site ↗</a>
             <a href="${project.repoUrl}" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
