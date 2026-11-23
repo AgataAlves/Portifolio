@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ágata — Portfólio • ADS (2º Semestre)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,600;0,6..72,700;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>ágata.ads</span>
+      </a>
+      <nav class="nav" aria-label="Navegação">
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-tag">
+        <span>2º semestre de ADS</span>
+        <span>•</span>
+        <span>HTML • CSS • JS</span>
+      </div>
+
+      <h1>
+        Páginas feitas na prática, <span class="accent-word">com calma</span> e identidade própria.
+      </h1>
+
+      <p class="hero-desc">
+        Oi, eu sou a Ágata. Estou fechando o segundo semestre de Análise e Desenvolvimento de
+        Sistemas e construindo meu repertório web testando layout, responsividade e lógica no dia a dia.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+        <a href="#sobre" class="btn btn-outline">Como eu trabalho</a>
+      </div>
+
+      <p class="process-note">
+        <strong>Processo honesto:</strong> os projetos, escolhas visuais e ajustes finais são meus —
+        com apoio de IA para destravar dúvidas, revisar estrutura e testar variações de código.
+      </p>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Trabalhos</p>
+          <h2>Projetos no GitHub</h2>
+        </div>
+        <div class="filter-group" id="filterBar" role="group" aria-label="Filtrar projetos">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="css">Layout &amp; CSS</button>
+          <button class="filter-btn" data-filter="js">JavaScript</button>
+        </div>
+      </div>
+
+      <div id="projectsGrid" class="projects-grid"></div>
+    </section>
+
+    <section id="sobre" class="section about-grid">
+      <div class="about-text">
+        <p class="kicker">Sobre mim</p>
+        <h2>Minha personalidade e meu jeito de ver a vida</h2>
+        <p>
+          Sou o tipo de pessoa que gosta de descobrir coisas novas, criar, imaginar possibilidades e entender o mundo ao meu redor. Tenho meus momentos de quietude, mas também uma mente cheia de ideias, curiosidades e vontade de fazer coisas que ainda não fiz.
+        </P>
+        <p>
+          Gosto de aprender no meu próprio ritmo, de me desafiar e de ver até onde posso chegar quando realmente me dedico a algo. A tecnologia entrou na minha vida como uma forma de explorar minha criatividade, e o desenvolvimento front-end me permite transformar um pouco daquilo que imagino em algo real.
+          Ainda estou descobrindo muita coisa sobre mim, sobre o que quero construir e sobre onde quero chegar. Mas gosto de pensar que cada pequeno passo, cada projeto e cada nova experiência fazem parte de quem estou me tornando.
+        </p>
+      </div>
+
+      <aside class="about-card">
+        <h3>O que estou praticando</h3>
+        <ul class="skill-list">
+          <li><strong>HTML5:</strong> estrutura semântica e formulários</li>
+          <li><strong>CSS3 &amp; Bootstrap:</strong> responsividade, cores e componentes</li>
+          <li><strong>JavaScript puro:</strong> DOM, filtros e interações simples</li>
+          <li><strong>Git &amp; GitHub:</strong> organização de pastas e publicação</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="contato" class="section contact-wrap">
+      <div>
+        <p class="kicker">Contato</p>
+        <h2>Quer trocar ideia ou ver mais código?</h2>
+        <p class="contact-sub">
+          Manda uma mensagem por aqui ou passa lá no meu GitHub.
+        </p>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <label class="sr-only" for="name">Seu nome</label>
+        <input id="name" type="text" placeholder="Seu nome" required />
+
+        <label class="sr-only" for="email">Seu e-mail</label>
+        <input id="email" type="email" placeholder="Seu e-mail" required />
+
+        <label class="sr-only" for="message">Mensagem</label>
+        <textarea id="message" rows="3" placeholder="Escreva sua mensagem..." required></textarea>
+
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        Feito por <strong>Ágata</strong> • <span id="year">2026</span> — com apoio pontual de IA na revisão e ideias.
+      </p>
+      <div class="footer-links">
+        <a href="https://github.com/AgataAlves" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/agata-alves/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
