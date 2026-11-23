@@ -484,6 +484,7 @@ h3,
 }
 
 @media (max-width: 720px) {
+
   .about-grid,
   .contact-wrap {
     grid-template-columns: 1fr;
