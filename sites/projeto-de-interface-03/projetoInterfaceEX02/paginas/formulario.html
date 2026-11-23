@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscrição para Basquete</title>
+    <link rel="stylesheet" href="../style2.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="videoeaudio.html">Vídeo e Audio</a>
+        </li>
+        <li>
+          <a href="tabelas.html">Tabelas</a>
+        </li>
+        <li>
+          <a href="imagens.html">Imagens</a>
+        </li>
+        <li>
+          <a href="formulario.html">Formulario</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h2>Formulário de Inscrição - Treinamento de Basquete</h2>
+      <p>Preencha os campos abaixo para se inscrever e aprender basquete!</p>
+
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+          <label for="nome">Nome Completo: </label>
+          <input type="text" id="nome" name="nome" size="80" required />
+          <br />
+          <br />
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <br />
+          <label for="telefone">Telefone: </label>
+          <input type="tel" id="telefone" name="telefone" size="15" required />
+          <br />
+          <br />
+          <label for="idade">Idade: </label>
+          <input
+            type="number"
+            id="idade"
+            name="idade"
+            min="10"
+            max="50"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Experiência e Preferências </legend>
+          <label>Qual o seu nível de experiência no basquete? </label>
+          <br />
+          <br />
+          <input type="radio" name="experiencia" value="Nenhuma" required />
+          Nenhuma
+          <br />
+          <input type="radio" name="experiencia" value="Básica" /> Básica
+          <br />
+          <input type="radio" name="experiencia" value="Intermediária" />
+          Intermediária
+          <br />
+          <input type="radio" name="experiencia" value="Avançada" /> Avançada
+          <br />
+          <br />
+          <br />
+          <label>Quais habilidades deseja aprimorar? </label>
+          <br />
+          <br />
+          <input type="checkbox" name="habilidades" value="Drible" />
+          Drible
+          <br />
+          <input type="checkbox" name="habilidades" value="Arremesso" />
+          Arremesso
+          <br />
+          <input type="checkbox" name="habilidades" value="Passe" /> Passe
+          <br />
+          <input type="checkbox" name="habilidades" value="Defesa" /> Defesa
+          <br />
+          <br />
+          <label for="motivacao">Motivação para aprender basquete: </label>
+          <br />
+          <br />
+          <textarea
+            id="motivacao"
+            name="motivacao"
+            rows="1"
+            required
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Escolha de Treinos </legend>
+          <label for="dias">Escolha os dias disponíveis: </label>
+          <select id="dias" name="dias" required>
+            <br />
+            <option value="segunda">Segunda-feira</option>
+            <br />
+            <option value="quarta">Quarta-feira</option>
+            <br />
+            <option value="sexta">Sexta-feira</option>
+            <br />
+          </select>
+          <br />
+          <br />
+          <label for="horario">Horário preferido: </label>
+          <input type="time" id="horario" name="horario" required />
+        </fieldset>
+
+        <button type="reset">Resetar Formulário</button>
+        <button type="submit">Enviar Inscrição</button>
+
+    </div>
+  </body>
+</html>
